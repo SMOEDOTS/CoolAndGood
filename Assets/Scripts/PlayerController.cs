@@ -18,12 +18,8 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            speedx = 0;
-        }
 
-        if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D)|| Input.GetKeyUp(KeyCode.A)||Input.GetKeyUp(KeyCode.RightArrow)|| Input.GetKeyUp(KeyCode.LeftArrow))
         {
             speedx = 0;
         }
@@ -46,15 +42,17 @@ public class PlayerController : MonoBehaviour {
         speedy = GetComponent<Rigidbody2D>().velocity.y;
         GetComponent<Rigidbody2D>().velocity = new Vector2(speedx, speedy);
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A)|| Input.GetKey(KeyCode.LeftArrow))
         {
             speedx = -moveSpeed;
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D)|| Input.GetKey(KeyCode.RightArrow))
         {
             speedx = moveSpeed;
         }
+       
+        
 
         speedy = GetComponent<Rigidbody2D>().velocity.y;
         GetComponent<Rigidbody2D>().velocity = new Vector2(speedx, speedy);

@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/0CoolAndGuda.unity
+    path: Assets/Scenes/CoolAndGuda.unity
     guid: de3c7dcd484b625428d58f097dd84be6
   - enabled: 1
-    path: Assets/Scenes/1beanpassage.unity
+    path: Assets/Scenes/beanpassage.unity
     guid: 033ecb03c638ea24ab9d167a08595be7
+  - enabled: 1
+    path: Assets/Scenes/HailPillar.unity
+    guid: f061b62c29e58f749a446765599c5fc5
   - enabled: 1
     path: Assets/Scenes/after1.unity
     guid: 6ff703f91ed451b4da7a899745c2d66d
